@@ -4,3 +4,11 @@ body {
     overflow: hidden;
     background-color: black;    
 }
+
+#textbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: black;
+    background-color: white;
+}
