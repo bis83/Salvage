@@ -17,12 +17,14 @@ class Input {
             const index = this.keyMap[e.code];
             if(index !== null) {
                 this.keyState[index] = true;
+                e.preventDefault();
             }
         });
         document.addEventListener("keyup", (e) => {
             const index = this.keyMap[e.code];
             if(index !== null) {
                 this.keyState[index] = false;
+                e.preventDefault();
             }
         });
         document.addEventListener("blur", (e) => {
